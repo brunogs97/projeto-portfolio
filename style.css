@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+/*Header*/
+.list {
+    height: 8vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.list-menu-link {
+    text-decoration: none;
+    color: #333;
+    margin: 0 .5em;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.list-menu-link:hover {
+    border-bottom: 2px solid rgb(51, 180, 51);
+}
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    border-bottom: 15px solid rgb(51, 180, 51);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+}
+
+/*Animação bloco*/
+.block {
+    position: absolute;
+    width: 90px;
+    bottom: 160px;
+    animation: block-animation 6s infinite linear;
+}
+
+/*Animação mario*/
+.mario {
+    position: absolute;
+    width: 100px;
+    bottom: 0;
+    left: 385px;
+}
+
+.jump {
+    animation: jump 500ms ease-out ;
+}
+
+@keyframes block-animation {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 85px;
+    }
+
+    50% {
+        bottom: 85px;
+    }
+
+    60% {
+        bottom: 85px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
+
+/*Sobre*/
+.containerHome {
+    display: none;
+    position: absolute;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: .5em;
+    background-color: #e0f6ff;
+    width: 20%;
+    bottom: 40%;
+    left: 520px;
+    text-align: center;
+}
+
+.title {
+    margin: .5em 0;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.text-description {
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+.text-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+}
+
+/*Main*/
+main {
+    width: 90%;
+    margin: 1em auto 0 auto;
+    padding: 2em 1em 0.2em 1em;
+    background: #e0f6ff;
+    border-radius: 8px;
+}
+
+#home {
+    border-bottom: 1px solid #87ceeb ;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.img-home {
+    width: 20%;
+    margin-right: 2em;
+}
+
+.title-main {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*About*/
+#about {
+    border-bottom: 1px solid #87ceeb ;
+    padding-bottom: 2em;
+}
+
+.content-about {
+    text-align: center;
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-me {
+    width: 30%;
+}
+
+.text-description-about {
+    text-align: justify;
+    font-weight: 400;
+}
+
+.content-icons-tec {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.icon-description-tec {
+    text-align: center;
+    margin: .5em;
+}
+
+.icons-tec {
+    font-size: 28px;
+}
+
+.description-tec {
+    margin-top: .2em;
+}
+
+.projects {
+    text-align: center;
+    margin: 2em 0;
+}
+
+/*CARD*/
+.content-cards-projects {
+    margin-top: 3em;
+}
+
+.content-card {
+    margin-bottom: 1em;
+}
+
+
+.card-text {
+    font-size: 14px;
+    margin: 1em 0;
+}
+
+.card:hover {
+    margin: .2em;
+    transform: scale(1.1);
+}
+
+.icons-cards {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 .2em;
+}
+
+
+#projects {
+    border-bottom: 1px solid #87ceeb ;
+    padding-bottom: 2em;
+}
+
+.contact-email {
+    width: 300px;
+    margin: .5em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #87ceeb;
+    padding: .5em 0;
+    border-radius: 4px;
+}
+
+.email {
+    margin-left: .5em;
+}
+
+.content-contacts {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: .5em auto;
+}
+
+.content-icon-contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.icon-contact {
+    font-size: 20px;
+    color: #000;
+}
+
+.footer {
+    border-top: 1px solid #87ceeb;
+    padding-top: 1em;
+    margin: 1em 0 0 0;
+    font-size: 12px;
+}
